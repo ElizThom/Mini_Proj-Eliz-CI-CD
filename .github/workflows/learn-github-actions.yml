@@ -50,7 +50,7 @@ jobs:
           password: ${{ secrets.DOCKER_ACCESS_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t elizthom/webserver:latest ./webserver
+        run: docker build -t elizthom/webserver:latest ./bike_sharing_api
 
       - name: Push Docker image
         run: docker push elizthom/webserver:latest
